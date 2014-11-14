@@ -19,7 +19,7 @@ $('#derecha').swiperight(function(){
 			case 2:
 			navigator.notification.vibrate(1000);
 			break;
-});//switch opt
+};//switch opt
 	},"Examen2","Beep,Vibrar,Cancelar");//confirm
 	
 });//barrer derecha
