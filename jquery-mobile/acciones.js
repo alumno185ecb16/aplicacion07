@@ -3,11 +3,11 @@
 $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		
-		$('#izquierda').tap(function(){
+		$('#izquierda').on("swipeleft",function(){
 			navigator.notification.alert("Deslizó a la izquierda",function(){"Practica4","Aceptar"});
 });//barrer izquierda
 
-$('#derecha').swiperight(function(){
+$('#derecha').on("swiperight",function(){
 	navigator.notification.confirm("¿que quieres hacer?",function(opt){
 		switch(opt)
 		{
